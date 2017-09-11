@@ -62,8 +62,13 @@
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="Reference" Type="Folder" URL="../Reference">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="SubVI&apos;s" Type="Folder"/>
-		<Item Name="StateControl.ctl" Type="VI" URL="../StateControl.ctl"/>
+		<Item Name="Type Defs" Type="Folder">
+			<Item Name="StateControl.ctl" Type="VI" URL="../StateControl.ctl"/>
+		</Item>
 		<Item Name="StateMachine.vi" Type="VI" URL="../StateMachine.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
