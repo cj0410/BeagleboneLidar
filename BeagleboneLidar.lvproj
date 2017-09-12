@@ -90,15 +90,14 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="Controls" Type="Folder" URL="../Controls">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Reference" Type="Folder" URL="../Reference">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="SubVI&apos;s" Type="Folder">
-			<Item Name="CreateMessage.vi" Type="VI" URL="../CreateMessage.vi"/>
-			<Item Name="ReadMessage.vi" Type="VI" URL="../ReadMessage.vi"/>
-		</Item>
-		<Item Name="Type Defs" Type="Folder">
-			<Item Name="StateControl.ctl" Type="VI" URL="../StateControl.ctl"/>
+		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="StateMachine.vi" Type="VI" URL="../StateMachine.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -116,9 +115,27 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/DIO/vis/Write.vi"/>
 			</Item>
+			<Item Name="Aircraft GPS Data.ctl" Type="VI" URL="../SubVIs/Telemetry/Aircraft Information/Controls/Aircraft GPS Data.ctl"/>
+			<Item Name="Aircraft Sensor Status Data.ctl" Type="VI" URL="../SubVIs/Telemetry/Aircraft Information/Controls/Aircraft Sensor Status Data.ctl"/>
+			<Item Name="Convert Sensor Status to RGB value.vi" Type="VI" URL="../SubVIs/Telemetry/SubVI/Convert Sensor Status to RGB value.vi"/>
+			<Item Name="FGV Methods.ctl" Type="VI" URL="../SubVIs/Telemetry/Controls/FGV Methods.ctl"/>
 			<Item Name="liblinxdevice.dll" Type="Document" URL="liblinxdevice.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="mavlink CRC.vi" Type="VI" URL="../MAVLink_example/MAVLink_example.llb/mavlink CRC.vi"/>
+			<Item Name="MAVLink EKF Status Report.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink EKF Status Report.ctl"/>
+			<Item Name="MAVLink Flight modes.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink Flight modes.ctl"/>
+			<Item Name="MAVLink Heartbeat.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink Heartbeat.ctl"/>
+			<Item Name="MAVLINK Mav Frame.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLINK Mav Frame.ctl"/>
+			<Item Name="MAVLink Mission Ack.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/Mission Planning Controls/MAVLink Mission Ack.ctl"/>
+			<Item Name="MAVLINK Mission Item.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/Mission Planning Controls/MAVLINK Mission Item.ctl"/>
+			<Item Name="MAVLink Optical Flow.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink Optical Flow.ctl"/>
+			<Item Name="MAVLink Packet Sequence.vi" Type="VI" URL="../SubVIs/Telemetry/Telemetry/Global Variables/MAVLink Packet Sequence.vi"/>
+			<Item Name="MAVLink System Status.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink System Status.ctl"/>
+			<Item Name="MAVLink Waypoint.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink Waypoint.ctl"/>
+			<Item Name="Send Drone Message.vi" Type="VI" URL="../SubVIs/Telemetry/Telemetry/Sub VI/Send Drone Message.vi"/>
+			<Item Name="Sensor Status LED CLuster.ctl" Type="VI" URL="../SubVIs/Telemetry/GUI Design/Indicators/Sensor Status LED CLuster.ctl"/>
+			<Item Name="Status LED.ctl" Type="VI" URL="../SubVIs/Telemetry/GUI Design/Indicators/Status LED.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
