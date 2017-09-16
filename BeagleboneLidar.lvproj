@@ -101,6 +101,9 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="MainStateMachine.vi" Type="VI" URL="../MainStateMachine.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="Boolean Trigger__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/boolean/boolean.llb/Boolean Trigger__ogtk.vi"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -164,7 +167,7 @@ AddOutputFilter chunkFilter
 			<Item Name="MAVLink Waypoint.ctl" Type="VI" URL="../SubVIs/Telemetry/SubVI/Controls/MAVLink Waypoint.ctl"/>
 			<Item Name="Send Drone Message.vi" Type="VI" URL="../SubVIs/Telemetry/Telemetry/Sub VI/Send Drone Message.vi"/>
 			<Item Name="Sensor Status LED CLuster.ctl" Type="VI" URL="../SubVIs/Telemetry/GUI Design/Indicators/Sensor Status LED CLuster.ctl"/>
-			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
+			<Item Name="Serial - Settings.ctl" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2014/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="Status LED.ctl" Type="VI" URL="../SubVIs/Telemetry/GUI Design/Indicators/Status LED.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
